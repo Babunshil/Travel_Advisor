@@ -1,7 +1,5 @@
 import axios from "axios";
 
-
-
 export const getPlaceData = async (type, sw, ne) => {
   try {
     // request (if request not run then the error code will run)
@@ -13,7 +11,7 @@ export const getPlaceData = async (type, sw, ne) => {
         tr_longitude: ne.lng,
       },
       headers: {
-        'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_TRAVEL_API_KEY,
+        'X-RapidAPI-Key': 'b665656b66msh92ecf170a9a7e8bp15cfd4jsned399bb7430b',
         'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
       }
     });

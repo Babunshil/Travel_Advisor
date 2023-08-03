@@ -12,9 +12,7 @@ const List = ({ places, childClicked, isLoading, type, setType, rating, setRatin
 
   const [elRefs, setElRefs] = useState([]);
 
-  // useEffect(() => {
-  //   setElRefs((refs) => Array(places.length).fill().map((_, i) => refs[i] || createRef()));
-  // }, [places]);
+
   useEffect(() => {
     const refs = Array(places?.length).fill().map((_, i) => elRefs[i] || createRef);
 
